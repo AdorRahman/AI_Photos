@@ -3,7 +3,7 @@ import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 
 import { logo } from "./assets";
 import { Home, CreatePost } from "./pages";
-
+const today = new Date();
 const App = () => {
   return (
     <BrowserRouter>
@@ -18,12 +18,26 @@ const App = () => {
           Create
         </Link>
       </header>
-      <main className="sm:p-8 px-4 py-8 w-full bg-[#f9fafe] main-[calc(100vh-73px)]">
+      <main className="sm:p-8 px-4 py-8 w-full bg-[#f9fafe] main-[calc(96vh-73px)]">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/create-post" element={<CreatePost />} />
         </Routes>
       </main>
+      <footer>
+        <div className=" h-[4vh] text-center text-[#a3a3a3]">
+          © {today.getFullYear()} Powered by{" "}
+          <a
+            href="https://www.linkedin.com/in/adorrahman/"
+            alt="adorrahman"
+            target="_blank"
+            title="linkedIn"
+          >
+            <span className="text-[#292929]">Ador Rahman</span>
+          </a>
+          .
+        </div>
+      </footer>
     </BrowserRouter>
   );
 };
