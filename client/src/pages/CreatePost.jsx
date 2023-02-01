@@ -156,7 +156,7 @@ const CreatePost = () => {
 
         <div className="mt-10">
           <p className="mt-2 text-[#666e75] text-[14px]">
-            ** Create unlimited AI-generated images, discover your creativity,
+            ** Generate unlimited AI-generated images, discover your creativity,
             and share your masterpieces with the community. **
           </p>
           <button
