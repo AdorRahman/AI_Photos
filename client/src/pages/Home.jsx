@@ -73,7 +73,8 @@ const Home = () => {
         </h1>
         <p className="mt-2 text-[#666e75] text-[14px] max-w-[500px]">
           Explore the gallery of your AI-generated imaginative images and
-          unleash your creativity by creating one.
+          unleash your creativity by{" "}
+          <span className="text-[#000]">creating</span> one.
         </p>
       </div>
 
