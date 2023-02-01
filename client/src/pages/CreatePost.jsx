@@ -92,8 +92,8 @@ const CreatePost = () => {
         <p className="mt-2 text-[#666e75] text-[14px] max-w-[500px]">
           Generate unlimited images with Artificial Intelligence. Advanced
           algorithms craft unique pictures. Unleash your creativity now, with
-          your given <span className="text-[#000]">prompt</span>. <br>No refreshes
-          allowed, share your creations with the community.
+          your given <span className="text-[#000]">prompt</span>. <br />
+          No refreshes allowed, share your creations with the community.
         </p>
       </div>
 
