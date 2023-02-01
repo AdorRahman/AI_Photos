@@ -86,10 +86,14 @@ const CreatePost = () => {
   return (
     <section className="max-w-7xl mx-auto">
       <div>
-        <h1 className="font-extrabold text-[#222328] text-[32px]">Create</h1>
+        <h1 className="font-extrabold text-[#222328] text-[32px]">
+          Create a Post
+        </h1>
         <p className="mt-2 text-[#666e75] text-[14px] max-w-[500px]">
-          Generate an imaginative image through AI and share it with the
-          community
+          Generate unlimited images with Artificial Intelligence. Advanced
+          algorithms craft unique pictures. Unleash your creativity now, with
+          your given prompt. No refreshes allowed, share your creations with the
+          community.
         </p>
       </div>
 
@@ -99,7 +103,7 @@ const CreatePost = () => {
             labelName="Your Name"
             type="text"
             name="name"
-            placeholder="Ex., john doe"
+            placeholder="Ex..."
             value={form.name}
             handleChange={handleChange}
           />
@@ -108,7 +112,7 @@ const CreatePost = () => {
             labelName="Prompt"
             type="text"
             name="prompt"
-            placeholder="An Impressionist oil painting of sunflowers in a purple vase…"
+            placeholder="Unleash your creativity now, with your given prompt..."
             value={form.prompt}
             handleChange={handleChange}
             isSurpriseMe
@@ -152,8 +156,8 @@ const CreatePost = () => {
 
         <div className="mt-10">
           <p className="mt-2 text-[#666e75] text-[14px]">
-            ** Once you have created the image you want, you can share it with
-            others in the community **
+            ** Create unlimited AI-generated images, discover your creativity,
+            and share your masterpieces with the community. **
           </p>
           <button
             type="submit"
