@@ -113,14 +113,14 @@ const CreatePost = () => {
             labelName="Prompt"
             type="text"
             name="prompt"
-            placeholder="Unleash your creativity now, with your given prompt..."
+            placeholder="Let your imagination run with prompt..."
             value={form.prompt}
             handleChange={handleChange}
             isSurpriseMe
             handleSurpriseMe={handleSurpriseMe}
           />
 
-          <div className="relative bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 w-64 p-3 h-64 flex justify-center items-center">
+          <div className="relative bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 lg:w-80 w-64 p-3 lg:h-80 h-64 flex justify-center items-center">
             {form.photo ? (
               <img
                 src={form.photo}
@@ -147,7 +147,7 @@ const CreatePost = () => {
           <button
             type="button"
             onClick={generateImage}
-            className=" text-white bg-green-700 font-medium rounded-md text-sm w-full sm:w-auto px-5 py-2.5 text-center"
+            className=" text-white bg-[#000] font-medium rounded-md text-sm w-full sm:w-auto px-5 py-2.5 text-center"
           >
             {generatingImg
               ? "This should not take long (up to 2 minutes)..."
@@ -157,8 +157,8 @@ const CreatePost = () => {
 
         <div className="mt-10">
           <p className="mt-2 text-[#666e75] text-[14px]">
-            ** Generate unlimited AI-generated images, discover your creativity,
-            and share your masterpieces with the community. **
+            ** Generate until you are happy and share your masterpieces with the
+            community using the button below. **
           </p>
           <button
             type="submit"

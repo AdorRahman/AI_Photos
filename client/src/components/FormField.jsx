@@ -25,16 +25,17 @@ const FormField = ({
         </button>
       )}
     </div>
-    <input
+
+    <textarea
       type={type}
       id={name}
       name={name}
-      className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#6469ff] focus:border-[#6469ff] outline-none block w-full p-3"
+      className="bg-gray-50 min-h-[6vh] h-[6.6vh] border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#6469ff] focus:border-[#6469ff] outline-none block w-full p-3"
       placeholder={placeholder}
       value={value}
       onChange={handleChange}
       required
-    />
+    ></textarea>
   </div>
 );
 

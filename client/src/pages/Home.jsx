@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 import { Card, FormField, Loader } from "../components";
+import { Link } from "react-router-dom";
 
 const RenderCards = ({ data, title }) => {
   if (data?.length > 0) {
@@ -74,7 +75,12 @@ const Home = () => {
         <p className="mt-2 text-[#666e75] text-[14px] max-w-[500px]">
           Explore the gallery of your AI-generated imaginative images and
           unleash your creativity by{" "}
-          <span className="text-[#000]">creating</span> one.
+          <Link
+            to="/create-post"
+            className="font-inter font-bold text-[#6469ff] hover:underline"
+          >
+            Create Now
+          </Link>{" "}
         </p>
       </div>
 
