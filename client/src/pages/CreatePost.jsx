@@ -102,10 +102,10 @@ const CreatePost = () => {
         <form className="mt-16 max-w-3xl" onSubmit={handleSubmit}>
           <div className="flex flex-col gap-5">
             <FormField
-              labelName="Your Name"
+              labelName=""
               type="text"
               name="name"
-              placeholder="Ex..."
+              placeholder="Your Name"
               value={form.name}
               handleChange={handleChange}
             />
@@ -121,7 +121,7 @@ const CreatePost = () => {
               handleSurpriseMe={handleSurpriseMe}
             />
 
-            <div className="relative bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 w-80 p-3 h-80 flex justify-center items-center">
+            <div className="relative bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  p-3 w-96 h-96 flex justify-center items-center">
               {form.photo ? (
                 <img
                   src={form.photo}
@@ -148,7 +148,7 @@ const CreatePost = () => {
             <button
               type="button"
               onClick={generateImage}
-              className=" text-white bg-[#000] font-medium rounded-md text-sm w-full sm:w-auto px-5 py-2.5 text-center"
+              className=" text-white bg-[#000] font-medium rounded-md text-sm w-full sm:w-auto px-[54px] py-2.5 text-center"
             >
               {generatingImg
                 ? "This should not take long (up to 2 minutes)..."
