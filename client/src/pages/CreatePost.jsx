@@ -121,7 +121,7 @@ const CreatePost = () => {
               handleSurpriseMe={handleSurpriseMe}
             />
 
-            <div className="relative bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  p-3 w-96 h-96 flex justify-center items-center">
+            <div className="relative bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  p-3 lg:w-96 lg:h-96 w-80 h-80  flex justify-center items-center">
               {form.photo ? (
                 <img
                   src={form.photo}
@@ -148,7 +148,7 @@ const CreatePost = () => {
             <button
               type="button"
               onClick={generateImage}
-              className=" text-white bg-[#000] font-medium rounded-md text-sm w-full sm:w-auto px-[54px] py-2.5 text-center"
+              className=" text-white bg-[#000] font-medium rounded-md text-sm w-full sm:w-auto lg:px-[54px] px-5 py-2.5 text-center"
             >
               {generatingImg
                 ? "This should not take long (up to 2 minutes)..."
